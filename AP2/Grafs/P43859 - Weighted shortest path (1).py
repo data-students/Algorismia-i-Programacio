@@ -1,49 +1,49 @@
 from yogi import tokens, read
 import heapq
+from typing import Optional
 
-def min_cost(x: int, y: int, adj: list[list[tuple[int,int]]]) -> int:
-    '''retorna el minim cost per anar de x a y utilitzant Dijkstra'''
-    n = len(adj)
-    dist: list[int] = [-1 for _ in range(n)]
-    dist[x] = 0
-    used: list[bool] = [False for _ in range(n)]
-    pending: list = [] # dist, node
-    heapq.heappush(pending, (0, x))
+Node = int
+Weight = int
+Arc = tuple[Weight, Node]
+ListAdj = list[Arc]
+DirGraph = list[ListAdj]
 
-    while pending:
+def dijkstra(G: DirGraph, ini: int, end: int) -> Optional[int]:
+    n = len(G)
+    distances = [float("inf")] * n
+    distances[ini] = 0
+    pq = [(0, ini)]  # (dist, node)
 
-        current = heapq.heappop(pending)[1]
-
-        if used[current]:
+    while pq:
+        dist, curr_node = heapq.heappop(pq)
+        
+        if curr_node == end:
+            return dist
+        
+        if dist > distances[curr_node]:
             continue
+        
+        for adj_node, weight in G[curr_node]:
+            new_dist = dist + weight
+            if new_dist < distances[adj_node]:
+                distances[adj_node] = new_dist
+                heapq.heappush(pq, (new_dist, adj_node))
 
-        used[current] = True # ja hem trobat la dist minima per anar a current
-
-        if current == y:
-            return dist[y]
-
-        for v, w in adj[current]:
-            if not used[v] and (dist[v] == -1 or dist[v] > dist[current] + w):
-                dist[v] = dist[current] + w
-                heapq.heappush(pending, (dist[v], v))
-
-    return dist[y]
-
+    return int(distances[end]) if distances[end] != float("inf") else None
 
 def main() -> None:
     for n in tokens(int):
         m = read(int)
-        adj: list[list[tuple[int, int]]] = [[] for _ in range(n)]
-
+        G: DirGraph = [[] for _ in range(n)]
         for _ in range(m):
-            adj[read(int)].append((read(int), read(int)))
-
-        x, y = read(int), read(int)
-        cost = min_cost(x, y, adj)
+            u, v, c = read(int), read(int), read(int)
+            G[u].append((v, c))
         
-        if cost == -1:
-            print(f'no path from {x} to {y}')
-        else:
-            print(int(cost))
+        x, y = read(int), read(int)
+        
+        shortest_path = dijkstra(G, x, y)
 
-main()
+        print(shortest_path) if shortest_path is not None else print(f'no path from {x} to {y}')
+
+if __name__ == "__main__":
+    main()
