@@ -113,7 +113,7 @@ Aquest repositori està pensat per complementar l'aprenentatge, no està pensat 
 - [x] P35537 - Increasing numbers
 - [x] P22467 - Perfect primes
 - [x] P56549 - Changes of base
-- [ ] P43557 - Perfect primes (hard version)
+- [x] P43557 - Perfect primes (hard version)
 - [x] P62467 - Bars (1)
 - [x] P79860 - Bars (2)
 - [x] P10694 - Bars (3)
@@ -424,6 +424,7 @@ Aquest repositori està pensat per complementar l'aprenentatge, no està pensat 
 - [x] P13994 - Weighted shortest path (2)
 - [x] P68936 - Weighted shortest path (5)
 - [x] P12887 - Minimum spanning trees
+- [x] P90865 - Strongly connected components
 - [x] P17957 - Electrical grids
 - [x] P29033 - Two colors
 - [x] P10047 - Troba el camí (1)
