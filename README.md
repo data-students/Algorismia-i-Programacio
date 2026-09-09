@@ -10,7 +10,7 @@ Aquest índex registra **tots** els problemes del temari i quins tenen solució 
 - **AP2:** Piles · Cues de Prioritat · Conjunts · Diccionaris · Dividir i vèncer · Grafs · Arbres · Exàmens
 - **AP3:** Exhaustive search · Dynamic programming · Greedy algorithms · Exàmens
 
-Cada carpeta inclou un `README.md` amb el llistat de problemes i el seu estat de resolució.
+Al final del README hi ha llistat de problemes i el seu estat de resolució.
 
 
 ## Com contribuir?
