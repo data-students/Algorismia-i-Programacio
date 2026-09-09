@@ -2,7 +2,7 @@
 
 Reculls de solucions en **Python** dels problemes de les assignatures **AP1**, **AP2** i **AP3** del grau de Ciència i Enginyeria de Dades (UPC).
 
-Pode trobar el llistat de problemes i el seu estat de resolució al final del README
+Podeu trobar el llistat de problemes i el seu estat de resolució al final del README
 
 ## Estructura
 
@@ -17,7 +17,10 @@ Pode trobar el llistat de problemes i el seu estat de resolució al final del RE
   * El teu problema té una puntuació AC (Accepted, verd, etc.) al jutge.
 
 ## Ús i raó de l'existència del repositori
-Aquest repositori està pensat per complementar l'aprenentatge, no està pensat per substituïr res. També per reforçar l'estudi des de casa. És part del projecte "Apunts Dades" de l'Associació d'Estudiants de Dades.
+Aquest repositori està pensat per complementar l'aprenentatge, no està pensat per substituïr res. També per reforçar l'estudi des de casa. És part del projecte "Apunts Dades" de l'Associació d'Estudiants de Dades. Entregar codi d'aquest repositori com a propi és plagi segons la normativa de la UPC.
+
+Per qualsevol dubte, contacteu amb: roberto.nsoni@aed.cat
+
 
 ## Llistat de problemes
 
