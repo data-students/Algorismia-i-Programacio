@@ -2,16 +2,13 @@
 
 Reculls de solucions en **Python** dels problemes de les assignatures **AP1**, **AP2** i **AP3** del grau de Ciència i Enginyeria de Dades (UPC).
 
-Aquest índex registra **tots** els problemes del temari i quins tenen solució al repositori. El detall problema a problema és a cada `README.md` d'assignatura.
+Pode trobar el llistat de problemes i el seu estat de resolució al final del README
 
 ## Estructura
 
 - **AP1:** Comencem · Bucles · Funcions · Recorreguts i Cerques · Recursivitat · Consolidació · Llistes · Matrius i Estructures · Exàmens
 - **AP2:** Piles · Cues de Prioritat · Conjunts · Diccionaris · Dividir i vèncer · Grafs · Arbres · Exàmens
 - **AP3:** Exhaustive search · Dynamic programming · Greedy algorithms · Exàmens
-
-Al final del README hi ha llistat de problemes i el seu estat de resolució.
-
 
 ## Com contribuir?
 * Fes [una PR](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request) afegint els problemes al repositori. El teu problema serà fàcilment acceptat si:
